@@ -1,3 +1,11 @@
+// "body-parser": "^2.2.0",
+//     "cors": "^2.8.5",
+//     "express": "^5.1.0",
+//     "mermaid": "^11.6.0",
+//     "multer": "^1.4.5-lts.2",
+//     "puppeteer": "^24.6.0",
+//     "sharp": "^0.34.0"
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const puppeteer = require('puppeteer');
