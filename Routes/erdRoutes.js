@@ -1,10 +1,9 @@
-// routes/erdRoutes.js
 const express = require('express');
-const { generateErd } = require('../controllers/erdController');
-const { validateGenerateErdRequest } = require('../middleware/requestValidator');
-
 const router = express.Router();
+const erdController = require('../controllers/erdController');
+const validateRequest = require('../Middleware/validateRequest');
 
-router.post('/generate-erd', validateGenerateErdRequest, generateErd);
+// Define the route to generate ERD
+router.post('/generate-erd', validateRequest, erdController.generateERD);
 
 module.exports = router;
